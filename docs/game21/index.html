@@ -1,3 +1,89 @@
-<ul>
-  <li><a href="game21.html">Lab02/1</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab02/1 - Start</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #1a0b2e 0%, #0a0512 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: rgba(138, 43, 226, 0.25);
+            filter: blur(120px);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .content-wrapper {
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+            color: #f3e8ff;
+            text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+        }
+
+        .start-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 4px; 
+            padding: 16px 60px;
+            border: 1px solid rgba(168, 85, 247, 0.4);
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 50px; 
+            backdrop-filter: blur(5px);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .start-btn:hover {
+            background: rgba(168, 85, 247, 0.2);
+            border-color: rgba(168, 85, 247, 0.9);
+            box-shadow: 0 0 35px rgba(168, 85, 247, 0.6);
+            transform: scale(1.05); 
+        }
+
+        .start-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <h1>Lab02/1</h1>
+        <a href="game21.html" class="start-btn">START</a>
+    </div>
+
+</body>
+</html>
